@@ -1,0 +1,32 @@
+{
+  "navLinks": [
+    { "name": "Home", "path": "/", "separator": true },
+    { "name": "Services", "path": "/services", "separator": true },
+    { "name": "Projects", "path": "/projects", "separator": true },
+    { "name": "Resources", "path": "/resources", "separator": true },
+    { "name": "About", "path": "/about", "separator": true },
+    { "name": "Contact", "path": "/contact", "separator": false }
+  ],
+  "usefullLinks": [
+    {
+      "name": "Solar Panel Installation",
+      "path": "/solar-panel-installation",
+      "separator": true
+    },
+    {
+      "name": "Energy Storage Systems",
+      "path": "/energy-storage-systems",
+      "separator": true
+    },
+    {
+      "name": "System Maintenance",
+      "path": "/system-maintenance",
+      "separator": true
+    },
+    {
+      "name": "Solar Consulting",
+      "path": "/solar-consulting",
+      "separator": false
+    }
+  ]
+}

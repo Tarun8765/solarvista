@@ -1,0 +1,9 @@
+{
+  "socialLink": [
+    { "icon": "Facebook", "url": "https://facebook.com" },
+    { "icon": "Twitter", "url": "https://twitter.com" },
+    { "icon": "Instagram", "url": "https://instagram.com" },
+    { "icon": "Linkedin", "url": "https://www.linkedin.com" },
+    { "icon": "whatsapp", "url": "https://whatsapp.com" }
+  ]
+}
