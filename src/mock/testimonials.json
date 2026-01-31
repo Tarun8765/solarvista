@@ -1,0 +1,19 @@
+{
+  "testimonials": [
+    {
+      "quote": "Switching to solar was the best decision for our family. The installation was seamless and our energy bills have dropped by 80%!",
+      "author": "Sarah Johnson",
+      "role": "Homeowner"
+    },
+    {
+      "quote": "The team was professional and efficient. Our commercial solar system has significantly reduced operating costs while helping the environment.",
+      "author": "Michael Chen",
+      "role": "Business Owner"
+    },
+    {
+      "quote": "Outstanding service from consultation to installation. The solar panels look great and the energy savings are remarkable.",
+      "author": "Emily Rodriguez",
+      "role": "Property Manager"
+    }
+  ]
+}

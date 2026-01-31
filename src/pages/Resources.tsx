@@ -250,14 +250,20 @@ const Resources = () => {
                       <SelectValue placeholder="Select your state" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="CA">California</SelectItem>
-                      <SelectItem value="TX">Texas</SelectItem>
-                      <SelectItem value="AZ">Arizona</SelectItem>
-                      <SelectItem value="FL">Florida</SelectItem>
-                      <SelectItem value="NY">New York</SelectItem>
-                      <SelectItem value="NJ">New Jersey</SelectItem>
-                      <SelectItem value="CO">Colorado</SelectItem>
-                      <SelectItem value="MA">Massachusetts</SelectItem>
+                      <SelectItem value="AP">Andhra Pradesh</SelectItem>
+                      <SelectItem value="BR">Bihar</SelectItem>
+                      <SelectItem value="RJ">Rajasthan</SelectItem>
+                      <SelectItem value="MP">Madhya Pradesh</SelectItem>
+                      <SelectItem value="MH">Maharashtra</SelectItem>
+                      <SelectItem value="DL">Delhi</SelectItem>
+                      <SelectItem value="HR">Haryana</SelectItem>
+                      <SelectItem value="PB">Punjab</SelectItem>
+                      <SelectItem value="GJ">Gujarat</SelectItem>
+                      <SelectItem value="TN">Tamil Nadu</SelectItem>
+                      <SelectItem value="KA">Karnataka</SelectItem>
+                      <SelectItem value="WB">West Bengal</SelectItem>
+                      <SelectItem value="OD">Odisha</SelectItem>
+                      <SelectItem value="TS">Telangana</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

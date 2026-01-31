@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -18,7 +19,12 @@ import { VideoTestimonials } from "@/components/VideoTestimonials";
 import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import FAQSection from "../components/FAQSection";
+import testimonials from "../mock/testimonials.json";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+
 const Home = () => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
   const stats = [
     { value: "2500+", label: "Happy Customers" },
     { value: "15+", label: "Years Experience" },
@@ -88,27 +94,6 @@ const Home = () => {
     },
   ];
 
-  const testimonials = [
-    {
-      quote:
-        "Switching to solar was the best decision for our family. The installation was seamless and our energy bills have dropped by 80%!",
-      author: "Sarah Johnson",
-      role: "Homeowner",
-    },
-    {
-      quote:
-        "The team was professional and efficient. Our commercial solar system has significantly reduced operating costs while helping the environment.",
-      author: "Michael Chen",
-      role: "Business Owner",
-    },
-    {
-      quote:
-        "Outstanding service from consultation to installation. The solar panels look great and the energy savings are remarkable.",
-      author: "Emily Rodriguez",
-      role: "Property Manager",
-    },
-  ];
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -138,7 +123,7 @@ const Home = () => {
                 the planet. Our expert team makes switching to solar simple,
                 affordable, and worry-free.
               </p>
-              <div className="flex flex-wrap gap-4">
+              {/* <div className="flex flex-wrap gap-4">
                 <Button
                   asChild
                   size="lg"
@@ -157,6 +142,26 @@ const Home = () => {
                   <a href="#video">
                     <Play className="mr-2 h-4 w-4" /> Watch Video
                   </a>
+                </Button>
+              </div> */}
+
+              <div className="flex flex-wrap gap-4">
+                <Button
+                  asChild
+                  size="lg"
+                  className="text-primary hover:bg-green-400/90 text-white"
+                >
+                  <Link to="/contact">
+                    Get Free Quote <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white/20"
+                  onClick={() => setIsVideoOpen(true)}
+                >
+                  <Play className="mr-2 h-4 w-4" /> Watch Video
                 </Button>
               </div>
               <div className="grid grid-cols-3 gap-6 mt-12">
@@ -369,6 +374,26 @@ const Home = () => {
           </ScrollAnimation>
         </div>
       </section>
+
+      {/* Video Modal */}
+      <Dialog open={isVideoOpen} onOpenChange={setIsVideoOpen}>
+        <DialogContent className="sm:max-w-4xl p-0 overflow-hidden bg-black border-none">
+          <DialogTitle className="sr-only">
+            SolarVista Introduction Video
+          </DialogTitle>
+          <AspectRatio ratio={16 / 9}>
+            {isVideoOpen && (
+              <iframe
+                src="https://youtu.be/9sxQ54NRPCg?si=B43v2uIPIywuPz26"
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title="SolarVista Introduction Video"
+              />
+            )}
+          </AspectRatio>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

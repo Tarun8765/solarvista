@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "id": "residential-solar-installation",
+      "title": "Residential Solar Installation",
+      "location": "San Diego, CA",
+      "capacity": "8.5 kW",
+      "type": "Residential",
+      "description": "Complete solar panel system for a single-family home, reducing energy bills by 85% annually.",
+      "image": "../assets/residential-solar.jpg",
+      "features": ["25 Solar Panels", "Tesla Powerwall", "Net Metering"]
+    },
+    {
+      "id": "commercial-solar-array",
+      "title": "Commercial Solar Array",
+      "location": "Los Angeles, CA",
+      "capacity": "250 kW",
+      "type": "Commercial",
+      "description": "Large-scale solar installation for a commercial warehouse, providing clean energy and significant cost savings.",
+      "image": "../assets/commercial-solar.jpg",
+      "features": ["500+ Solar Panels", "Battery Storage", "Remote Monitoring"]
+    },
+    {
+      "id": "residential-rooftop-system",
+      "title": "Residential Rooftop System",
+      "location": "San Francisco, CA",
+      "capacity": "12 kW",
+      "type": "Residential",
+      "description": "Premium solar installation with advanced monitoring and energy storage for maximum efficiency.",
+      "image": "../assets/installation.jpg",
+      "features": ["30 Premium Panels", "Smart Inverter", "Energy Management"]
+    },
+    {
+      "id": "industrial-solar-farm",
+      "title": "Industrial Solar Farm",
+      "location": "Sacramento, CA",
+      "capacity": "500 kW",
+      "type": "Industrial",
+      "description": "Massive solar array powering manufacturing facilities with clean, renewable energy.",
+      "image": "../assets/commercial-solar.jpg",
+      "features": ["1000+ Panels", "Ground Mount", "Grid Integration"]
+    },
+    {
+      "id": "multi-family-housing",
+      "title": "Multi-Family Housing",
+      "location": "Oakland, CA",
+      "capacity": "75 kW",
+      "type": "Residential",
+      "description": "Solar solution for apartment complex providing shared energy benefits to all residents.",
+      "image": "../assets/residential-solar.jpg",
+      "features": ["150 Solar Panels", "Shared Metering", "Community Solar"]
+    },
+    {
+      "id": "office-building-solar",
+      "title": "Office Building Solar",
+      "location": "San Jose, CA",
+      "capacity": "180 kW",
+      "type": "Commercial",
+      "description": "Corporate office building achieving carbon neutrality through comprehensive solar installation.",
+      "image": "../assets/installation.jpg",
+      "features": ["360 Panels", "EV Charging", "LEED Certified"]
+    }
+  ]
+}

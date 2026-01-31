@@ -3,20 +3,20 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { 
-  ArrowLeft, 
-  MapPin, 
-  Zap, 
-  Calendar, 
-  CheckCircle2, 
-  Sun, 
-  Battery, 
-  Gauge, 
+import {
+  ArrowLeft,
+  MapPin,
+  Zap,
+  Calendar,
+  CheckCircle2,
+  Sun,
+  Battery,
+  Gauge,
   Clock,
   Users,
   Award,
   Play,
-  ArrowRight
+  ArrowRight,
 } from "lucide-react";
 import residentialImage from "@/assets/residential-solar.jpg";
 import commercialImage from "@/assets/commercial-solar.jpg";
@@ -63,11 +63,18 @@ const projectsData: Record<string, ProjectData> = {
     location: "San Diego, CA",
     capacity: "8.5 kW",
     type: "Residential",
-    description: "Complete solar panel system for a single-family home, reducing energy bills by 85% annually.",
-    longDescription: "This comprehensive residential solar installation transformed the Johnson family's energy consumption entirely. Located in sunny San Diego, this project maximizes solar potential with south-facing panels optimized for peak production. The system includes premium monocrystalline panels paired with a Tesla Powerwall for energy storage, ensuring power availability even during grid outages.",
+    description:
+      "Complete solar panel system for a single-family home, reducing energy bills by 85% annually.",
+    longDescription:
+      "This comprehensive residential solar installation transformed the Johnson family's energy consumption entirely. Located in sunny San Diego, this project maximizes solar potential with south-facing panels optimized for peak production. The system includes premium monocrystalline panels paired with a Tesla Powerwall for energy storage, ensuring power availability even during grid outages.",
     image: residentialImage,
     gallery: [residentialImage, installationImage, commercialImage],
-    features: ["25 Solar Panels", "Tesla Powerwall", "Net Metering", "Smart Monitoring"],
+    features: [
+      "25 Solar Panels",
+      "Tesla Powerwall",
+      "Net Metering",
+      "Smart Monitoring",
+    ],
     completionDate: "March 2024",
     duration: "3 days",
     client: "Johnson Family",
@@ -77,10 +84,34 @@ const projectsData: Record<string, ProjectData> = {
     warrantyYears: 25,
     co2Offset: "6.2 tons/year",
     timeline: [
-      { phase: "1", title: "Site Assessment", description: "Roof inspection, shading analysis, and energy audit", duration: "Day 1", completed: true },
-      { phase: "2", title: "Design & Permits", description: "Custom system design and permit applications", duration: "Week 1-2", completed: true },
-      { phase: "3", title: "Installation", description: "Panel mounting, wiring, and inverter setup", duration: "Day 1-2", completed: true },
-      { phase: "4", title: "Inspection & Activation", description: "City inspection and utility connection", duration: "Day 3", completed: true },
+      {
+        phase: "1",
+        title: "Site Assessment",
+        description: "Roof inspection, shading analysis, and energy audit",
+        duration: "Day 1",
+        completed: true,
+      },
+      {
+        phase: "2",
+        title: "Design & Permits",
+        description: "Custom system design and permit applications",
+        duration: "Week 1-2",
+        completed: true,
+      },
+      {
+        phase: "3",
+        title: "Installation",
+        description: "Panel mounting, wiring, and inverter setup",
+        duration: "Day 1-2",
+        completed: true,
+      },
+      {
+        phase: "4",
+        title: "Inspection & Activation",
+        description: "City inspection and utility connection",
+        duration: "Day 3",
+        completed: true,
+      },
     ],
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     specs: [
@@ -96,11 +127,18 @@ const projectsData: Record<string, ProjectData> = {
     location: "Los Angeles, CA",
     capacity: "250 kW",
     type: "Commercial",
-    description: "Large-scale solar installation for a commercial warehouse, providing clean energy and significant cost savings.",
-    longDescription: "This enterprise-scale commercial solar project demonstrates the viability of renewable energy for large industrial operations. The 250kW system covers the entire warehouse rooftop, generating enough clean energy to power operations and feed excess back to the grid. Advanced monitoring systems provide real-time performance data accessible from anywhere.",
+    description:
+      "Large-scale solar installation for a commercial warehouse, providing clean energy and significant cost savings.",
+    longDescription:
+      "This enterprise-scale commercial solar project demonstrates the viability of renewable energy for large industrial operations. The 250kW system covers the entire warehouse rooftop, generating enough clean energy to power operations and feed excess back to the grid. Advanced monitoring systems provide real-time performance data accessible from anywhere.",
     image: commercialImage,
     gallery: [commercialImage, installationImage, residentialImage],
-    features: ["500+ Solar Panels", "Battery Storage", "Remote Monitoring", "EV Charging Stations"],
+    features: [
+      "500+ Solar Panels",
+      "Battery Storage",
+      "Remote Monitoring",
+      "EV Charging Stations",
+    ],
     completionDate: "January 2024",
     duration: "2 weeks",
     client: "Pacific Logistics Inc.",
@@ -110,12 +148,48 @@ const projectsData: Record<string, ProjectData> = {
     warrantyYears: 25,
     co2Offset: "182 tons/year",
     timeline: [
-      { phase: "1", title: "Feasibility Study", description: "Structural analysis and energy modeling", duration: "Week 1", completed: true },
-      { phase: "2", title: "Engineering & Design", description: "Detailed system engineering and procurement", duration: "Week 2-3", completed: true },
-      { phase: "3", title: "Roof Preparation", description: "Structural reinforcement and mounting system", duration: "Week 4", completed: true },
-      { phase: "4", title: "Panel Installation", description: "Solar panel installation and wiring", duration: "Week 5-6", completed: true },
-      { phase: "5", title: "Electrical Work", description: "Inverter installation and grid connection", duration: "Week 7", completed: true },
-      { phase: "6", title: "Testing & Commissioning", description: "System testing and final activation", duration: "Week 8", completed: true },
+      {
+        phase: "1",
+        title: "Feasibility Study",
+        description: "Structural analysis and energy modeling",
+        duration: "Week 1",
+        completed: true,
+      },
+      {
+        phase: "2",
+        title: "Engineering & Design",
+        description: "Detailed system engineering and procurement",
+        duration: "Week 2-3",
+        completed: true,
+      },
+      {
+        phase: "3",
+        title: "Roof Preparation",
+        description: "Structural reinforcement and mounting system",
+        duration: "Week 4",
+        completed: true,
+      },
+      {
+        phase: "4",
+        title: "Panel Installation",
+        description: "Solar panel installation and wiring",
+        duration: "Week 5-6",
+        completed: true,
+      },
+      {
+        phase: "5",
+        title: "Electrical Work",
+        description: "Inverter installation and grid connection",
+        duration: "Week 7",
+        completed: true,
+      },
+      {
+        phase: "6",
+        title: "Testing & Commissioning",
+        description: "System testing and final activation",
+        duration: "Week 8",
+        completed: true,
+      },
     ],
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     specs: [
@@ -131,11 +205,18 @@ const projectsData: Record<string, ProjectData> = {
     location: "San Francisco, CA",
     capacity: "12 kW",
     type: "Residential",
-    description: "Premium solar installation with advanced monitoring and energy storage for maximum efficiency.",
-    longDescription: "This premium residential installation showcases the latest in solar technology. The Chen family's San Francisco home now features a cutting-edge 12kW system with bifacial panels that capture light from both sides, increasing overall energy production. Integrated with a whole-home battery system, this installation provides complete energy independence.",
+    description:
+      "Premium solar installation with advanced monitoring and energy storage for maximum efficiency.",
+    longDescription:
+      "This premium residential installation showcases the latest in solar technology. The Chen family's San Francisco home now features a cutting-edge 12kW system with bifacial panels that capture light from both sides, increasing overall energy production. Integrated with a whole-home battery system, this installation provides complete energy independence.",
     image: installationImage,
     gallery: [installationImage, residentialImage, commercialImage],
-    features: ["30 Premium Panels", "Smart Inverter", "Energy Management", "Bifacial Technology"],
+    features: [
+      "30 Premium Panels",
+      "Smart Inverter",
+      "Energy Management",
+      "Bifacial Technology",
+    ],
     completionDate: "February 2024",
     duration: "4 days",
     client: "Chen Family",
@@ -145,10 +226,34 @@ const projectsData: Record<string, ProjectData> = {
     warrantyYears: 25,
     co2Offset: "8.8 tons/year",
     timeline: [
-      { phase: "1", title: "Consultation", description: "Energy needs assessment and system sizing", duration: "Day 1", completed: true },
-      { phase: "2", title: "Permitting", description: "City permits and HOA approval", duration: "Week 1-2", completed: true },
-      { phase: "3", title: "Installation", description: "Premium panel installation with microinverters", duration: "Day 1-3", completed: true },
-      { phase: "4", title: "Smart Home Integration", description: "Energy management system setup", duration: "Day 4", completed: true },
+      {
+        phase: "1",
+        title: "Consultation",
+        description: "Energy needs assessment and system sizing",
+        duration: "Day 1",
+        completed: true,
+      },
+      {
+        phase: "2",
+        title: "Permitting",
+        description: "City permits and HOA approval",
+        duration: "Week 1-2",
+        completed: true,
+      },
+      {
+        phase: "3",
+        title: "Installation",
+        description: "Premium panel installation with microinverters",
+        duration: "Day 1-3",
+        completed: true,
+      },
+      {
+        phase: "4",
+        title: "Smart Home Integration",
+        description: "Energy management system setup",
+        duration: "Day 4",
+        completed: true,
+      },
     ],
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     specs: [
@@ -164,11 +269,18 @@ const projectsData: Record<string, ProjectData> = {
     location: "Sacramento, CA",
     capacity: "500 kW",
     type: "Industrial",
-    description: "Massive solar array powering manufacturing facilities with clean, renewable energy.",
-    longDescription: "This ground-mounted industrial solar farm represents our largest installation to date. Spanning several acres, the 500kW system provides clean energy for multiple manufacturing facilities in the Sacramento industrial district. The ground-mount design allows for optimal panel angle adjustment and easy maintenance access.",
+    description:
+      "Massive solar array powering manufacturing facilities with clean, renewable energy.",
+    longDescription:
+      "This ground-mounted industrial solar farm represents our largest installation to date. Spanning several acres, the 500kW system provides clean energy for multiple manufacturing facilities in the Sacramento industrial district. The ground-mount design allows for optimal panel angle adjustment and easy maintenance access.",
     image: commercialImage,
     gallery: [commercialImage, installationImage, residentialImage],
-    features: ["1000+ Panels", "Ground Mount", "Grid Integration", "Tracking System"],
+    features: [
+      "1000+ Panels",
+      "Ground Mount",
+      "Grid Integration",
+      "Tracking System",
+    ],
     completionDate: "December 2023",
     duration: "6 weeks",
     client: "Sacramento Industrial Park",
@@ -178,10 +290,34 @@ const projectsData: Record<string, ProjectData> = {
     warrantyYears: 30,
     co2Offset: "365 tons/year",
     timeline: [
-      { phase: "1", title: "Land Survey", description: "Topographical survey and soil analysis", duration: "Week 1", completed: true },
-      { phase: "2", title: "Foundation Work", description: "Ground preparation and mounting structure", duration: "Week 2-3", completed: true },
-      { phase: "3", title: "Panel Installation", description: "Large-scale panel deployment", duration: "Week 4-5", completed: true },
-      { phase: "4", title: "Grid Connection", description: "High-voltage connection and testing", duration: "Week 6", completed: true },
+      {
+        phase: "1",
+        title: "Land Survey",
+        description: "Topographical survey and soil analysis",
+        duration: "Week 1",
+        completed: true,
+      },
+      {
+        phase: "2",
+        title: "Foundation Work",
+        description: "Ground preparation and mounting structure",
+        duration: "Week 2-3",
+        completed: true,
+      },
+      {
+        phase: "3",
+        title: "Panel Installation",
+        description: "Large-scale panel deployment",
+        duration: "Week 4-5",
+        completed: true,
+      },
+      {
+        phase: "4",
+        title: "Grid Connection",
+        description: "High-voltage connection and testing",
+        duration: "Week 6",
+        completed: true,
+      },
     ],
     specs: [
       { label: "System Size", value: "500 kW", icon: Zap },
@@ -196,11 +332,18 @@ const projectsData: Record<string, ProjectData> = {
     location: "Oakland, CA",
     capacity: "75 kW",
     type: "Residential",
-    description: "Solar solution for apartment complex providing shared energy benefits to all residents.",
-    longDescription: "This innovative community solar project brings renewable energy to apartment living. The 75kW shared system serves 48 units, with energy credits distributed among all residents based on their consumption. This model makes solar accessible to renters who previously couldn't benefit from solar energy.",
+    description:
+      "Solar solution for apartment complex providing shared energy benefits to all residents.",
+    longDescription:
+      "This innovative community solar project brings renewable energy to apartment living. The 75kW shared system serves 48 units, with energy credits distributed among all residents based on their consumption. This model makes solar accessible to renters who previously couldn't benefit from solar energy.",
     image: residentialImage,
     gallery: [residentialImage, commercialImage, installationImage],
-    features: ["150 Solar Panels", "Shared Metering", "Community Solar", "Resident Portal"],
+    features: [
+      "150 Solar Panels",
+      "Shared Metering",
+      "Community Solar",
+      "Resident Portal",
+    ],
     completionDate: "November 2023",
     duration: "10 days",
     client: "Oakland Heights Apartments",
@@ -210,10 +353,34 @@ const projectsData: Record<string, ProjectData> = {
     warrantyYears: 25,
     co2Offset: "54.8 tons/year",
     timeline: [
-      { phase: "1", title: "Stakeholder Meeting", description: "HOA approval and resident information session", duration: "Week 1", completed: true },
-      { phase: "2", title: "System Design", description: "Shared metering system architecture", duration: "Week 2", completed: true },
-      { phase: "3", title: "Installation", description: "Multi-building panel installation", duration: "Week 3-4", completed: true },
-      { phase: "4", title: "Resident Onboarding", description: "Portal setup and energy credit allocation", duration: "Week 5", completed: true },
+      {
+        phase: "1",
+        title: "Stakeholder Meeting",
+        description: "HOA approval and resident information session",
+        duration: "Week 1",
+        completed: true,
+      },
+      {
+        phase: "2",
+        title: "System Design",
+        description: "Shared metering system architecture",
+        duration: "Week 2",
+        completed: true,
+      },
+      {
+        phase: "3",
+        title: "Installation",
+        description: "Multi-building panel installation",
+        duration: "Week 3-4",
+        completed: true,
+      },
+      {
+        phase: "4",
+        title: "Resident Onboarding",
+        description: "Portal setup and energy credit allocation",
+        duration: "Week 5",
+        completed: true,
+      },
     ],
     specs: [
       { label: "System Size", value: "75 kW", icon: Zap },
@@ -228,8 +395,10 @@ const projectsData: Record<string, ProjectData> = {
     location: "San Jose, CA",
     capacity: "180 kW",
     type: "Commercial",
-    description: "Corporate office building achieving carbon neutrality through comprehensive solar installation.",
-    longDescription: "This flagship commercial installation helped TechForward Inc. achieve their carbon neutrality goals. The 180kW rooftop system, combined with EV charging stations, demonstrates how modern office buildings can embrace sustainability. The sleek, integrated design maintains the building's aesthetic while maximizing energy production.",
+    description:
+      "Corporate office building achieving carbon neutrality through comprehensive solar installation.",
+    longDescription:
+      "This flagship commercial installation helped TechForward Inc. achieve their carbon neutrality goals. The 180kW rooftop system, combined with EV charging stations, demonstrates how modern office buildings can embrace sustainability. The sleek, integrated design maintains the building's aesthetic while maximizing energy production.",
     image: installationImage,
     gallery: [installationImage, commercialImage, residentialImage],
     features: ["360 Panels", "EV Charging", "LEED Certified", "Green Building"],
@@ -242,10 +411,34 @@ const projectsData: Record<string, ProjectData> = {
     warrantyYears: 25,
     co2Offset: "131 tons/year",
     timeline: [
-      { phase: "1", title: "LEED Assessment", description: "Green building certification planning", duration: "Week 1", completed: true },
-      { phase: "2", title: "Design Integration", description: "Architectural integration and EV planning", duration: "Week 2", completed: true },
-      { phase: "3", title: "Solar Installation", description: "Rooftop panel installation", duration: "Week 3-4", completed: true },
-      { phase: "4", title: "EV Infrastructure", description: "Charging station installation", duration: "Week 5", completed: true },
+      {
+        phase: "1",
+        title: "LEED Assessment",
+        description: "Green building certification planning",
+        duration: "Week 1",
+        completed: true,
+      },
+      {
+        phase: "2",
+        title: "Design Integration",
+        description: "Architectural integration and EV planning",
+        duration: "Week 2",
+        completed: true,
+      },
+      {
+        phase: "3",
+        title: "Solar Installation",
+        description: "Rooftop panel installation",
+        duration: "Week 3-4",
+        completed: true,
+      },
+      {
+        phase: "4",
+        title: "EV Infrastructure",
+        description: "Charging station installation",
+        duration: "Week 5",
+        completed: true,
+      },
     ],
     specs: [
       { label: "System Size", value: "180 kW", icon: Zap },
@@ -265,7 +458,9 @@ const ProjectDetail = () => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Project Not Found</h1>
-          <p className="text-muted-foreground mb-8">The project you're looking for doesn't exist.</p>
+          <p className="text-muted-foreground mb-8">
+            The project you're looking for doesn't exist.
+          </p>
           <Button asChild>
             <Link to="/projects">
               <ArrowLeft className="mr-2 h-4 w-4" />
@@ -282,23 +477,29 @@ const ProjectDetail = () => {
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px]">
         <div className="absolute inset-0">
-          <img 
-            src={project.image} 
-            alt={project.title} 
+          <img
+            src={project.image}
+            alt={project.title}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
         </div>
         <div className="absolute bottom-0 left-0 right-0 p-8">
           <div className="container mx-auto">
-            <Button asChild variant="ghost" className="mb-4 text-white hover:bg-white/10">
+            <Button
+              asChild
+              variant="ghost"
+              className="mb-4 text-muted-foreground hover:bg-white/10"
+            >
               <Link to="/projects">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Projects
               </Link>
             </Button>
             <Badge className="mb-4">{project.type}</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">{project.title}</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              {project.title}
+            </h1>
             <div className="flex flex-wrap items-center gap-6 text-muted-foreground">
               <span className="flex items-center gap-2">
                 <MapPin className="h-5 w-5" />
@@ -333,13 +534,17 @@ const ProjectDetail = () => {
 
               {/* Specifications Grid */}
               <div>
-                <h2 className="text-3xl font-bold mb-6">System Specifications</h2>
+                <h2 className="text-3xl font-bold mb-6">
+                  System Specifications
+                </h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {project.specs.map((spec, index) => (
                     <Card key={index} className="p-4 text-center">
                       <spec.icon className="h-8 w-8 text-primary mx-auto mb-2" />
                       <p className="text-2xl font-bold">{spec.value}</p>
-                      <p className="text-sm text-muted-foreground">{spec.label}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {spec.label}
+                      </p>
                     </Card>
                   ))}
                 </div>
@@ -350,9 +555,12 @@ const ProjectDetail = () => {
                 <h2 className="text-3xl font-bold mb-6">Project Gallery</h2>
                 <div className="grid grid-cols-3 gap-4">
                   {project.gallery.map((img, index) => (
-                    <div key={index} className="aspect-video rounded-lg overflow-hidden">
-                      <img 
-                        src={img} 
+                    <div
+                      key={index}
+                      className="aspect-video rounded-lg overflow-hidden"
+                    >
+                      <img
+                        src={img}
                         alt={`${project.title} - Image ${index + 1}`}
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                       />
@@ -367,8 +575,8 @@ const ProjectDetail = () => {
                   <h2 className="text-3xl font-bold mb-6">Project Video</h2>
                   <Card className="overflow-hidden">
                     <div className="aspect-video bg-muted flex items-center justify-center relative group cursor-pointer">
-                      <img 
-                        src={project.image} 
+                      <img
+                        src={project.image}
                         alt={project.title}
                         className="w-full h-full object-cover"
                       />
@@ -384,14 +592,20 @@ const ProjectDetail = () => {
 
               {/* Timeline */}
               <div>
-                <h2 className="text-3xl font-bold mb-6">Installation Timeline</h2>
+                <h2 className="text-3xl font-bold mb-6">
+                  Installation Timeline
+                </h2>
                 <div className="space-y-4">
                   {project.timeline.map((step, index) => (
                     <Card key={index} className="p-6">
                       <div className="flex items-start gap-4">
-                        <div className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center ${
-                          step.completed ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground'
-                        }`}>
+                        <div
+                          className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center ${
+                            step.completed
+                              ? "bg-primary text-primary-foreground"
+                              : "bg-muted text-muted-foreground"
+                          }`}
+                        >
                           {step.completed ? (
                             <CheckCircle2 className="h-6 w-6" />
                           ) : (
@@ -400,13 +614,20 @@ const ProjectDetail = () => {
                         </div>
                         <div className="flex-1">
                           <div className="flex items-center justify-between mb-2">
-                            <h3 className="text-lg font-semibold">{step.title}</h3>
-                            <Badge variant="outline" className="flex items-center gap-1">
+                            <h3 className="text-lg font-semibold">
+                              {step.title}
+                            </h3>
+                            <Badge
+                              variant="outline"
+                              className="flex items-center gap-1"
+                            >
                               <Clock className="h-3 w-3" />
                               {step.duration}
                             </Badge>
                           </div>
-                          <p className="text-muted-foreground">{step.description}</p>
+                          <p className="text-muted-foreground">
+                            {step.description}
+                          </p>
                         </div>
                       </div>
                       {index < project.timeline.length - 1 && (
@@ -450,31 +671,46 @@ const ProjectDetail = () => {
                       <Zap className="h-4 w-4" />
                       Inverter
                     </span>
-                    <span className="font-medium text-sm">{project.inverterType}</span>
+                    <span className="font-medium text-sm">
+                      {project.inverterType}
+                    </span>
                   </div>
                   <div className="flex justify-between py-3 border-b">
                     <span className="text-muted-foreground flex items-center gap-2">
                       <Award className="h-4 w-4" />
                       Warranty
                     </span>
-                    <span className="font-medium">{project.warrantyYears} years</span>
+                    <span className="font-medium">
+                      {project.warrantyYears} years
+                    </span>
                   </div>
                 </div>
 
                 <div className="mt-6 p-4 bg-primary/10 rounded-lg">
-                  <p className="text-sm text-muted-foreground mb-1">Annual Savings</p>
-                  <p className="text-3xl font-bold text-primary">{project.savings}</p>
+                  <p className="text-sm text-muted-foreground mb-1">
+                    Annual Savings
+                  </p>
+                  <p className="text-3xl font-bold text-primary">
+                    {project.savings}
+                  </p>
                 </div>
 
                 <div className="mt-4 p-4 bg-green-50 dark:bg-green-950/30 rounded-lg">
-                  <p className="text-sm text-muted-foreground mb-1">CO₂ Offset</p>
-                  <p className="text-xl font-bold text-green-600">{project.co2Offset}</p>
+                  <p className="text-sm text-muted-foreground mb-1">
+                    CO₂ Offset
+                  </p>
+                  <p className="text-xl font-bold text-green-600">
+                    {project.co2Offset}
+                  </p>
                 </div>
 
                 <div className="mt-6 space-y-3">
                   <h4 className="font-semibold">Features</h4>
                   {project.features.map((feature, index) => (
-                    <div key={index} className="flex items-center gap-2 text-sm">
+                    <div
+                      key={index}
+                      className="flex items-center gap-2 text-sm"
+                    >
                       <CheckCircle2 className="h-4 w-4 text-primary" />
                       <span>{feature}</span>
                     </div>
@@ -497,7 +733,8 @@ const ProjectDetail = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-4">Inspired by This Project?</h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Let us create a custom solar solution for your property. Get a free consultation today.
+            Let us create a custom solar solution for your property. Get a free
+            consultation today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg">
